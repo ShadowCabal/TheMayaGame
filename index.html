@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Front-End</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+      }
+      
+      .stake-element {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="width: 100%; text-align: center;">
+      <h1>My Front-End</h1>
+      <p>Mana Token Balance: <span id="mana-balance">0</span></p>
+      <p>Soldier Token Balance: <span id="soldier-balance">0</span></p>
+    </div>
+    <div class="grid-container">
+      <div class="stake-element">
+        <h2>Temple of the Jungle</h2>
+        <img src="images/temple_jungle.png" alt="Temple of the Jungle" style="max-width: 50%; margin: 0 auto;">
+        <div class="input-field">
+          <p>Stake Mana Token:</p>
+          <input type="number" id="jungle-mana-stake">
+        </div>
+        <div class="input-field">
+          <p>Stake Soldier Token:</p>
+          <input type="number" id="jungle-soldier-stake">
+        </div>
+        <p>Mana Token Staked: <span id="jungle-mana-staked">0</span></p>
+        <p>Soldier Token Staked: <span id="jungle-soldier-staked">0</span></p>
+        <button onclick="stakeJungle()">Stake</button>
+      </div>
+      <div class="stake-element">
+        <h2>Temple of Ice</h2>
+        <img src="images/temple_ice.png" alt="Temple of Ice" style="max-width: 50%; margin: 0 auto;">
+        <div class="input-field">
+          <p>Stake Mana Token:</p>
+          <input type="number" id="ice-mana-stake">
+        </div>
+        <div class="input-field">
+          <p>Stake Soldier Token:</p>
+          <input type="number" id="ice-soldier-stake">
+        </div>
+        <p>Mana Token Staked: <span id="ice-mana-staked">0</span></p>
+        <p>Soldier Token Staked: <span id="ice-soldier-staked">0</span></p>
+        <button onclick="stakeIce()">Stake</button>
+      </div>
+      <div class="stake-element">
+        <h2>Temple of Fire</h2>
+        <img src="images/temple_fire.png" alt="Temple of Fire" style="max-width: 50%; margin: 0 auto;">
+        <div class="input-field">
+          <p>Stake Mana Token:</p>
+          <input type="number" id="fire-mana-stake">
+        </div>
+        <div class="input-field">
+          <p>Stake Soldier Token:</p>
+          <input type="number" id="fire-soldier-stake">
+        </div>
+        <p>Mana Token Staked: <span id="fire-mana-staked">0</span></p>
+        <p>Soldier Token Staked: <span id="fire-soldier-staked">0</span></p>
+        <button onclick="stakeFire()">Stake</button>
+      </div>
+      <div class="stake-element">
+        <h2>Temple of Water</h2>
+        <img src="images/temple_water.png" alt="Temple of Water" style="max-width: 50%; margin: 0 auto;">
+        <div class="input-field">
+          <p>Stake Mana Token:</p>
+          <input type="number" id="water-mana-stake">
+        </div>
+        <div class="input-field">
+          <p>Stake Soldier Token:</p>
+          <input type="number" id="water-soldier-stake">
+        </div>
+        <p>Mana Token Staked: <span id="water-mana-staked">0</span></p>
+        <p>Soldier Token Staked: <span id="water-soldier-staked">0</span></p>
+        <button onclick="waterFire()">Stake</button>
+      </div>
+    </div>

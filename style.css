@@ -1,0 +1,133 @@
+/* Global styles */
+body {
+    margin: 50;
+    box-sizing: border-box; /* add this line */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  /* Navigation styles */
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Main content styles */
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  section h2 {
+    margin-bottom: 10px;
+  }
+  
+  /* Token balance styles */
+  .balance,
+  .stake {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .balance h3,
+  .stake h3 {
+    margin-bottom: 5px;
+  }
+  
+  /* Stake element styles */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 20px;
+  }
+  
+  .stake-element {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .stake-element h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+  
+  .stake-element p {
+    margin: 0.5rem 0;
+  }
+  
+  .stake-label {
+    margin-right: 5px;
+  }
+  
+  .stake-input {
+    margin-right: 5px;
+    width: 50px;
+  }
+  
+  .stake-element input[type="number"] {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    width: 100%;
+  }
+  
+  .stake-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .stake-actions button {
+    margin: 0 5px;
+    background-color: #333;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .stake-actions button:hover {
+    background-color: #666;
+  }
+  
+  
